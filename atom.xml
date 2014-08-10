@@ -4,7 +4,7 @@
   <title><![CDATA[Robert Schultz]]></title>
   <link href="http://robertschultz.github.io/atom.xml" rel="self"/>
   <link href="http://robertschultz.github.io/"/>
-  <updated>2014-08-09T23:20:03-07:00</updated>
+  <updated>2014-08-09T23:23:07-07:00</updated>
   <id>http://robertschultz.github.io/</id>
   <author>
     <name><![CDATA[Robert Schultz]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Building Docker Containers for Node.js]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/building-docker-containers-for-node-dot-js/"/>
+    <link href="http://robertschultz.github.io/2014/08/09/building-docker-containers-for-node-dot-js/"/>
     <updated>2014-08-09T20:39:33-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/building-docker-containers-for-node-dot-js</id>
+    <id>http://robertschultz.github.io/2014/08/09/building-docker-containers-for-node-dot-js</id>
     <content type="html"><![CDATA[<p>I have been putting a lot of energy into Docker which is a new platform to package, configure and ship your applications through containers. If you haven’t read up on it I suggest you do.</p>
 
 <p>Over the weekend I put together a small Dockerfile on my GitHub to configure and build a Docker image for your own containers. I will continue to evolve it but please feel free to giv it a try, fork it and contribute back. I’m open to suggestions.</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[Find A Grave]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/find-a-grave/"/>
+    <link href="http://robertschultz.github.io/2014/08/09/find-a-grave/"/>
     <updated>2014-08-09T20:38:54-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/find-a-grave</id>
+    <id>http://robertschultz.github.io/2014/08/09/find-a-grave</id>
     <content type="html"><![CDATA[<p>Late last year I switched focus and was asked to lead the engineering efforts at Ancestry of a new acquiaition we made, Find A Grave. At first glance I felt like I jumped in a time machine and went back to 1995. But actually, this site is a bigger player in the geneaology world than one might think. With over 117 million memorials you can do the math and quickly realize that this is a very heavily traffic’d website. #760 as of this writing according to Alexa. But it’s more than that.</p>
 
 <p>The entire site is a free, community driven ecosystem which means all of the 117 million memorials and content have been provided by the users on their own time. This is driven by a passionate bunch of users who love doing what they do, with a lot of trust with the cofounder.</p>
@@ -51,9 +51,9 @@
   
   <entry>
     <title type="html"><![CDATA[React]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/react/"/>
+    <link href="http://robertschultz.github.io/2014/08/09/react/"/>
     <updated>2014-08-09T20:34:08-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/react</id>
+    <id>http://robertschultz.github.io/2014/08/09/react</id>
     <content type="html"><![CDATA[<p>Facebook’s little user interface library React is making some great progress lately. It’s implementation of a virtual dom is really great at performance from what I’ve tested with it so far. Here is an example if you’ve never seen their syntax before.</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -84,9 +84,9 @@
   
   <entry>
     <title type="html"><![CDATA[Passionate vs. Career]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/passionate-vs-career/"/>
+    <link href="http://robertschultz.github.io/2014/08/09/passionate-vs-career/"/>
     <updated>2014-08-09T20:33:27-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/passionate-vs-career</id>
+    <id>http://robertschultz.github.io/2014/08/09/passionate-vs-career</id>
     <content type="html"><![CDATA[<p>A few years ago when I had this powered by WordPress, I wrote an entry on passionate vs. career developers. Since I lost my old post I’m going to rewrite it now that I’m a little older and wiser.</p>
 
 <p>So first off, why drive this comparison? In my mind there are two different kinds of developers in the world or at least in the work place: passionate, and career. They are two opposing forces, typically at odds with one another and cause potential ripples through the workplace. Let’s start with what I define as a career developer.</p>
@@ -103,9 +103,9 @@
   
   <entry>
     <title type="html"><![CDATA[Be the Worst]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/be-the-worst/"/>
+    <link href="http://robertschultz.github.io/2014/08/09/be-the-worst/"/>
     <updated>2014-08-09T20:19:25-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/be-the-worst</id>
+    <id>http://robertschultz.github.io/2014/08/09/be-the-worst</id>
     <content type="html"><![CDATA[<p>So I read The Passionate Programmer a while back and there are several topics that Chad Fowler discusses in this book. Some are worth noting and talking about which I intend to do more here throughout this blog. The first one I want to call out is the concept of “Be the Worst”.</p>
 
 <p>What does being the worst really mean? In this context it’s about putting yourself in a situation where you consider yourself the worst in the group so that you effectively surround yourself with others who are better than you.</p>
@@ -120,9 +120,9 @@
   
   <entry>
     <title type="html"><![CDATA[Let’s Get Rid of the Hiring Status Quo]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/lets-get-rid-of-the-hiring-status-quo/"/>
+    <link href="http://robertschultz.github.io/2014/08/09/lets-get-rid-of-the-hiring-status-quo/"/>
     <updated>2014-08-09T20:19:19-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/lets-get-rid-of-the-hiring-status-quo</id>
+    <id>http://robertschultz.github.io/2014/08/09/lets-get-rid-of-the-hiring-status-quo</id>
     <content type="html"><![CDATA[<p>I have been in my fair share of interviews over the lifetime of my professional career and I have always felt the onsite interview process is a poor way to hire people.</p>
 
 <p>I have never found the trick questions or small onsite coding assessments valuable.</p>
@@ -143,9 +143,9 @@
   
   <entry>
     <title type="html"><![CDATA[Target Process to Manage Your Agile Team]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/target-process-to-manage-your-agile-team/"/>
+    <link href="http://robertschultz.github.io/2014/08/09/target-process-to-manage-your-agile-team/"/>
     <updated>2014-08-09T20:19:12-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/target-process-to-manage-your-agile-team</id>
+    <id>http://robertschultz.github.io/2014/08/09/target-process-to-manage-your-agile-team</id>
     <content type="html"><![CDATA[<p>When we build teams to focus on delivering high quality and efficient products, one of the initial tasks to focus on is selecting the right process for the team. You typically can do this in two ways: be extremely simple and use something like a whiteboard and post-it’s, or pick a tool that can solve the problem for you.</p>
 
 <p>I tend to rely on the latter.</p>
@@ -176,9 +176,9 @@
   
   <entry>
     <title type="html"><![CDATA[This is a sample post]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/04/22/a-sample-post/"/>
+    <link href="http://robertschultz.github.io/2014/04/22/a-sample-post/"/>
     <updated>2014-04-22T14:40:00-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/04/22/a-sample-post</id>
+    <id>http://robertschultz.github.io/2014/04/22/a-sample-post</id>
     <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <!-- More -->
