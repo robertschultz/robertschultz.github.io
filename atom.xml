@@ -1,17 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Robert Schultz]]></title>
   <link href="http://robertschultz.github.io/atom.xml" rel="self"/>
   <link href="http://robertschultz.github.io/"/>
-  <updated>2014-08-09T19:33:16-07:00</updated>
+  <updated>2014-08-09T21:18:42-07:00</updated>
   <id>http://robertschultz.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Robert Schultz]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building Docker Containers for Node.js]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/building-docker-containers-for-node-dot-js/"/>
+    <updated>2014-08-09T20:39:33-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/building-docker-containers-for-node-dot-js</id>
+    <content type="html"><![CDATA[<p>I have been putting a lot of energy into Docker which is a new platform to package, configure and ship your applications through containers. If you haven’t read up on it I suggest you do.</p>
+
+<p>Over the weekend I put together a small Dockerfile on my GitHub to configure and build a Docker image for your own containers. I will continue to evolve it but please feel free to giv it a try, fork it and contribute back. I’m open to suggestions.</p>
+
+<p>I will continue to add future Docker configurations to GitHub.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Find A Grave]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/find-a-grave/"/>
+    <updated>2014-08-09T20:38:54-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/find-a-grave</id>
+    <content type="html"><![CDATA[<p>Late last year I switched focus and was asked to lead the engineering efforts at Ancestry of a new acquiaition we made, Find A Grave. At first glance I felt like I jumped in a time machine and went back to 1995. But actually, this site is a bigger player in the geneaology world than one might think. With over 117 million memorials you can do the math and quickly realize that this is a very heavily traffic’d website. #760 as of this writing according to Alexa. But it’s more than that.</p>
+
+<p>The entire site is a free, community driven ecosystem which means all of the 117 million memorials and content have been provided by the users on their own time. This is driven by a passionate bunch of users who love doing what they do, with a lot of trust with the cofounder.</p>
+
+<p>After the acquisition closed, I quickly got to work on focusing on three key initiatives: migration, mobile and hiring.</p>
+
+<p>There had never been a mobile app to this point for Find A Grave. The core usage of the website is to discover and add new memorials as well as attach photos. So giving people the ability to this on the go from their phone makes complete sense and could spark quick initial growth. So I quickly built up the mobile team to get an app out within 6 months which we did. And it’s awesome. You can find the latest version of the iOS app here.</p>
+
+<p>We also worked aggresively to hire a full team. As bringing the Find A Grave brand under Ancestry makes a lot of sense, we also want to grow the brand. We I ended up building up a team of four engineers, half focused on mobile development and the other half on backend/frontend. This will give us an opportunity through 2014 to do a lot of awesome stuff.</p>
+
+<p>Lastly, during all of this the biggest challenge we had was that we needed to migrate all of the ingrastructure in house. There were a few reasons for this, but primarily to provide the right hardware and infrastructure for growth and redunancy as well as bring the data near the rest of our systems for analytics and big data purposes. Overall the migration took about six months, not bad. I really appreciate the hard work everyone did to get this done, it really was a collaborative effort with everyone.</p>
+
+<p>During the migration we took the time to optimize a lot of the processes. We upgraded all of the servers to VM instances managed in our private cloud. We automated all of the roll outs using a continuous deployment process with ThoughtWorks Go and Chef for provisioning. We stuck a reverse proxy load-balancer, Nginx, in front of everything to give us more flexibility for routing and high concurrency support.</p>
+
+<p>Overall this was a extremely fun experience for the past 9 months. As of now I have moved on to a more director role to oversee multiple initiatives, Find A Grave one of them, but it has been a project I’ve grown to love and become passionate about and I’m excited to continue to provide new and better experiences for the customers.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[React]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/react/"/>
+    <updated>2014-08-09T20:34:08-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/react</id>
+    <content type="html"><![CDATA[<p>Facebook’s little user interface library React is making some great progress lately. It’s implementation of a virtual dom is really great at performance from what I’ve tested with it so far. Here is an example if you’ve never seen their syntax before.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="cm">/** @jsx React.DOM */</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">HelloMessage</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+</span><span class="line">  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class="line">    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span><span class="p">{</span><span class="err">‘</span><span class="nx">Hello</span> <span class="err">‘</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;;</span>
+</span><span class="line">  <span class="p">}</span>
+</span><span class="line"><span class="p">});</span>
+</span><span class="line"><span class="nx">React</span><span class="p">.</span><span class="nx">renderComponent</span><span class="p">(</span>
+</span><span class="line">  <span class="o">&lt;</span><span class="nx">HelloMessage</span> <span class="nx">name</span><span class="o">=</span><span class="err">”</span><span class="nx">John</span><span class="err">”</span> <span class="o">/&gt;</span><span class="p">,</span>
+</span><span class="line">  <span class="nx">mountNode</span>
+</span><span class="line"><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>I’m still not 100% sold though that I like it any better than Angular. The true MVC nature of how we write JavaScript applications with Angular is still my favorite but it will be interesting to watch where React goes especially around JavaScript XML (JSX).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Passionate vs. Career]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/passionate-vs-career/"/>
+    <updated>2014-08-09T20:33:27-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/passionate-vs-career</id>
+    <content type="html"><![CDATA[<p>A few years ago when I had this powered by WordPress, I wrote an entry on passionate vs. career developers. Since I lost my old post I’m going to rewrite it now that I’m a little older and wiser.</p>
+
+<p>So first off, why drive this comparison? In my mind there are two different kinds of developers in the world or at least in the work place: passionate, and career. They are two opposing forces, typically at odds with one another and cause potential ripples through the workplace. Let’s start with what I define as a career developer.</p>
+
+<p>A career developer is someone who chose the career path of being a developer based on a specific need. They chose it because it paid well. Or because it’s the popular thing to do. Or because someone they knew switched careers. It’s something that is treated as merely a careeer that pays the check and usually stops there.</p>
+
+<p>Passionate. Those guys are up until 3AM tinkering with a linux distro. Or installing the latest version of MongoDB on an AWS instance. Or hacking at NodeJS scripts for fun. They do it because they love to do it. Not because it’s a wise career choice. Development of software in general, is such a different industry that it thrives off of the passionate folks in the world. The Mark Zuckerberg’s if you will. To be a truely great developer you have to have that passion and that sparkle. You need to want to wake up every day exciting about what you’re going to build that day and what problems you are going to solve.</p>
+
+<p>I’ve always considered myself passionate, hence the purpose of this post. But instead of thinking negatively about the people who are more on the career side, I prefer to mentor and evolve their interest in development into a real passion. That’s what it’s all about. Why do we love to write code or build beautiful applications for people if we don’t want to spread that love among others? You’d be lying to yourself if you didn’t feel that way.</p>
+
+<p>I want everyone to be passionate about technology. To look at it more than a career. To look at it a a challenge in life. Facing and overcoming challenges is part of our DNA as humans.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jekyll, Octopress & GitHub]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/jekyll/"/>
+    <updated>2014-08-09T20:20:12-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/jekyll</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Be the Worst]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/be-the-worst/"/>
+    <updated>2014-08-09T20:19:25-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/be-the-worst</id>
+    <content type="html"><![CDATA[<p>So I read The Passionate Programmer a while back and there are several topics that Chad Fowler discusses in this book. Some are worth noting and talking about which I intend to do more here throughout this blog. The first one I want to call out is the concept of “Be the Worst”.</p>
+
+<p>What does being the worst really mean? In this context it’s about putting yourself in a situation where you consider yourself the worst in the group so that you effectively surround yourself with others who are better than you.</p>
+
+<p>In many ways this sounds strange, but realistically it makes total sense. Think about it, when you are surrounded by others who may be more influential or qualified than yourself you indirectly become more inclined to learn more and push yourself. This is how human nature works. We are impressionable and absorb that around us like a sponge.</p>
+
+<p>So I think the concept of being the worst is a good example of something for us including myself to try. Work on a side project with some really intelligent people. Try to attend some meet ups on topics you are not as familiar with so that you have the desire to learn more to be on the same level as others. Contribute to some open source projects. These are all great methods.</p>
+
+<p>If you feel too comfortable in your career, need a change in pace or want to just generally feel pushed in regards to something you are not that familiar yourself, give this a try! You might discover yourself learning things in a new way. I know I will be.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Let’s Get Rid of the Hiring Status Quo]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/lets-get-rid-of-the-hiring-status-quo/"/>
+    <updated>2014-08-09T20:19:19-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/lets-get-rid-of-the-hiring-status-quo</id>
+    <content type="html"><![CDATA[<p>I have been in my fair share of interviews over the lifetime of my professional career and I have always felt the onsite interview process is a poor way to hire people.</p>
+
+<p>I have never found the trick questions or small onsite coding assessments valuable.</p>
+
+<p>For one, trick questions are silly. They are just an old tactic from the early days to try to separate out the left brainers from the rest of the pack.Even Google has admitted it doesn’t make any difference and is a waste of time.</p>
+
+<blockquote><p>Q. Other insights from the studies you’ve already done?</p><p>A. On the hiring side, we found that brainteasers are a complete waste of time. How many golf balls can you fit into an airplane? How many gas stations in Manhattan? A complete waste of time. They don’t predict anything. They serve primarily to make the interviewer feel smart.</p></blockquote>
+
+<p>Second, judging someones skill cannot be measured by putting someone in a room and forcing them to solve a problem without any context, preparation or understanding of what they are trying to solve.</p>
+
+<p>Is this how we solve problems normally at our job? I do not believe so.</p>
+
+<p>This is why I’ve moved towards a better and more personal approach to proving out which candidates are a perfect fit: spending time with them doing some pair programming. It feels more natural and it’s how we normally work. Why are people so scared to use this method?</p>
+
+<p>One of my best guesses is the time required to go into it. But if you think about it, making a poor hiring decision can cost you a lot more in the long run in both time and money especially if you are a young bootstrapped startup.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Target Process to Manage Your Agile Team]]></title>
+    <link href="http://robertschultz.github.io/blog/2014/08/09/target-process-to-manage-your-agile-team/"/>
+    <updated>2014-08-09T20:19:12-07:00</updated>
+    <id>http://robertschultz.github.io/blog/2014/08/09/target-process-to-manage-your-agile-team</id>
+    <content type="html"><![CDATA[<p>When we build teams to focus on delivering high quality and efficient products, one of the initial tasks to focus on is selecting the right process for the team. You typically can do this in two ways: be extremely simple and use something like a whiteboard and post-it’s, or pick a tool that can solve the problem for you.</p>
+
+<p>I tend to rely on the latter.</p>
+
+<p>I have spent countless hours searching and scouring the web to try to find the best tool that gives me all of the features I need. Beautiful and intuitive interface. Flexible configuration for your process. Cost effective. Effective reports. 3rd party integration.</p>
+
+<p>When I was spinning up my last team I evaluated many and did end up using Sprint.ly first. Really great interface, developed by who has respect in the community. But it just did not “flow” the way I wanted. That’s okay though, they are a new product and will eventually become a strong player.</p>
+
+<p>Previously I did a trial of Target Process but it was verison 2.0 which has a really outdated and clunky design.</p>
+
+<p>Then I came across Target Process 3.</p>
+
+<p><img src="http://robertschultz.github.io/images/tp1.png" width="700" title="" /></p>
+
+<p>This new design is absolutely bad ass. It basically sits on top of their existing code base with a fresh new look and feel. They support flexible process configurations with their boards. Do you use Scrum? No problem. Kanban? No problem. Want Scrumban? It’s that simple.</p>
+
+<p>We started using this in our team and we were able to reduce the time in our Backlog Grooming meetings quite significantly through using a special board just built for this need. You can see below the overall view of your Kanban board which mimics your physical board you may have currently on your teams wall.</p>
+
+<p><img src="http://robertschultz.github.io/images/tp2.jpeg" width="700" title="" /></p>
+
+<p>Oh yeah, they have an iOS mobile version of Target Process 3 as well. Right now they support up to 5 users for free. That’s perfect for a small dev team to get started on.</p>
+
+<p>As far as their roadmap goes, it looks like they are aggresively working on some additional features such as roadmaps, list based view of your work items, visual encoding such as custom colors and options for your work items.</p>
+
+<p>I’m pretty excited to see where this company goes. They are becoming a serious competitor in the agile project management space and one to watch out for.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[This is a sample post]]></title>

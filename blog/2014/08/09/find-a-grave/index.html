@@ -1,0 +1,112 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8">
+	<title>Find A Grave | Robert Schultz</title>
+
+	<meta name="author" content="Robert Schultz">
+	
+	<meta name="description" content="This is a description.">
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="/atom.xml" rel="alternate" title="Robert Schultz" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body class="post-template">
+  <main class="content" role="main"><article class="post">
+  
+	<header class="post-header">
+		<a id="blog-logo" href="/">Robert Schultz</a>
+	</header>
+	<span class="post-meta">09 Aug 2014</span>
+	<h1 class="post-title">Find a Grave</h1>
+
+	<section class="post-content">
+		<p>Late last year I switched focus and was asked to lead the engineering efforts at Ancestry of a new acquiaition we made, Find A Grave. At first glance I felt like I jumped in a time machine and went back to 1995. But actually, this site is a bigger player in the geneaology world than one might think. With over 117 million memorials you can do the math and quickly realize that this is a very heavily traffic’d website. #760 as of this writing according to Alexa. But it’s more than that.</p>
+
+<p>The entire site is a free, community driven ecosystem which means all of the 117 million memorials and content have been provided by the users on their own time. This is driven by a passionate bunch of users who love doing what they do, with a lot of trust with the cofounder.</p>
+
+<p>After the acquisition closed, I quickly got to work on focusing on three key initiatives: migration, mobile and hiring.</p>
+
+<p>There had never been a mobile app to this point for Find A Grave. The core usage of the website is to discover and add new memorials as well as attach photos. So giving people the ability to this on the go from their phone makes complete sense and could spark quick initial growth. So I quickly built up the mobile team to get an app out within 6 months which we did. And it’s awesome. You can find the latest version of the iOS app here.</p>
+
+<p>We also worked aggresively to hire a full team. As bringing the Find A Grave brand under Ancestry makes a lot of sense, we also want to grow the brand. We I ended up building up a team of four engineers, half focused on mobile development and the other half on backend/frontend. This will give us an opportunity through 2014 to do a lot of awesome stuff.</p>
+
+<p>Lastly, during all of this the biggest challenge we had was that we needed to migrate all of the ingrastructure in house. There were a few reasons for this, but primarily to provide the right hardware and infrastructure for growth and redunancy as well as bring the data near the rest of our systems for analytics and big data purposes. Overall the migration took about six months, not bad. I really appreciate the hard work everyone did to get this done, it really was a collaborative effort with everyone.</p>
+
+<p>During the migration we took the time to optimize a lot of the processes. We upgraded all of the servers to VM instances managed in our private cloud. We automated all of the roll outs using a continuous deployment process with ThoughtWorks Go and Chef for provisioning. We stuck a reverse proxy load-balancer, Nginx, in front of everything to give us more flexibility for routing and high concurrency support.</p>
+
+<p>Overall this was a extremely fun experience for the past 9 months. As of now I have moved on to a more director role to oversee multiple initiatives, Find A Grave one of them, but it has been a project I’ve grown to love and become passionate about and I’m excited to continue to provide new and better experiences for the customers.</p>
+
+	</section>
+
+  <footer class="post-footer">
+  <section class="author">
+    <h4>Robert Schultz</h4>
+    <p></p>
+  </section>
+  <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?text=Find A Grave&amp;url=http://robertschultz.github.io/blog/2014/08/09/find-a-grave/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://robertschultz.github.io/blog/2014/08/09/find-a-grave/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://robertschultz.github.io/blog/2014/08/09/find-a-grave/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+    </a>
+  </section>
+</footer>
+  <hr>
+  
+    <div class="share">
+</div>
+
+  
+  
+</article></main>
+  <footer class="site-footer"><a class="subscribe icon-feed" href="http://robertschultz.github.io/atom.xml"><span class="tooltip">Subscribe!</span></a>
+
+
+<div class="inner">
+
+
+Follow me on
+
+
+
+
+
+<a class="social github" href="http://github.com/robertschultz" title="GitHub">GitHub</a>
+
+
+
+
+<section class="copyright">All content copyright <a href="/">Robert Schultz</a> © 2014 • All rights reserved.</section>
+
+<section class="poweredby">Casper theme by <a class="icon-ghost" href="http://tryghost.org">Ghost</a> &amp; Published with <a href="http://octopress.org">Octopress</a></section>
+
+</div>
+</footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//yandex.st/highlightjs/7.3/highlight.min.js"></script>  
+<script>hljs.initHighlightingOnLoad()</script>
+
+
+
+
+
+</body>
+</html>
