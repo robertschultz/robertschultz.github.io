@@ -17,9 +17,6 @@
 		{{ content | excerpt }}
 	</section>
 {% else %}
-	<header class="post-header">
-		<a id="blog-logo" href="{{ site.root }}">{{ site.title }}</a>
-	</header>
 	<span class="post-meta">{{ page.date | date: "%d %b %Y" }}</span>
 	<h1 class="post-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
 
