@@ -4,7 +4,7 @@
   <title><![CDATA[Robert Schultz]]></title>
   <link href="http://robertschultz.github.io/atom.xml" rel="self"/>
   <link href="http://robertschultz.github.io/"/>
-  <updated>2014-08-09T22:18:01-07:00</updated>
+  <updated>2014-08-09T22:52:54-07:00</updated>
   <id>http://robertschultz.github.io/</id>
   <author>
     <name><![CDATA[Robert Schultz]]></name>
@@ -12,17 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Jekyll, Octopress & GitHub]]></title>
-    <link href="http://robertschultz.github.io/blog/2014/08/09/jekyll/"/>
-    <updated>2014-08-09T22:20:12-07:00</updated>
-    <id>http://robertschultz.github.io/blog/2014/08/09/jekyll</id>
-    <content type="html"><![CDATA[<p>I’ve been using Medium for some time now as I really dig the minimalistic and simplicity it provides. But Medium has a problem around giving a clear overview of a users posts and content. Plus, I don’t get really any power over my content which I want to pull back in.</p>
-
-<p>These three technologies work very well together to give you the power of a great hacker friendly blogging engine.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Docker Containers for Node.js]]></title>
