@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://robertschultz.github.io
+title: Robert Schultz
+subtitle: Technology Evangelist at Ancestry.com . Building awesome stuff. Trying to make the world a better place.
+author: Robert Schultz
 simple_search: https://www.google.com/search
-description:
+description: This is a description.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -33,14 +33,19 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
-rdiscount:
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-highlighter: pygments # default python pygments have been replaced by pygments.rb
-
+markdown: kramdown
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: nil
+    coderay_css: class
+#rdiscount:
+#  extensions:
+#    - autolink
+#    - footnotes
+#    - smart
+highlighter: null # default python pygments have been replaced by pygments.rb
+#highlighter: pygments # default python pygments have been replaced by pygments.rb
 paginate: 10          # Posts per page on the blog index
 paginate_path: "posts/:num"  # Directory base for pagination URLs eg. /posts/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
@@ -64,13 +69,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: robertschultz
+github_repo_count: 20
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: robertschultz
 twitter_tweet_button: true
 
 # Google +1

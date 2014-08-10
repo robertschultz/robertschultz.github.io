@@ -1,0 +1,23 @@
+---
+layout: post
+title: "React"
+date: 2014-08-09 20:34:08 -0700
+comments: true
+categories:
+---
+Facebook’s little user interface library React is making some great progress lately. It’s implementation of a virtual dom is really great at performance from what I’ve tested with it so far. Here is an example if you’ve never seen their syntax before.
+
+``` javascript
+/** @jsx React.DOM */
+var HelloMessage = React.createClass({
+  render: function() {
+    return <div>{‘Hello ‘ + this.props.name}</div>;
+  }
+});
+React.renderComponent(
+  <HelloMessage name=”John” />,
+  mountNode
+);
+```
+
+I’m still not 100% sold though that I like it any better than Angular. The true MVC nature of how we write JavaScript applications with Angular is still my favorite but it will be interesting to watch where React goes especially around JavaScript XML (JSX).
